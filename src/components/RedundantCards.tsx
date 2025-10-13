@@ -10,7 +10,13 @@ import {
   CardTitle,
 } from "@/components/ui/8bit/card";
 
-function RedundantCards(props) {
+interface RedundantCardsProps {
+  title: string;
+  healthbar: number;
+  imgsrc: string;
+}
+
+function RedundantCards(props: RedundantCardsProps) {
   // title, healthbar, imgsrc
   return (
     <Card className="w-75 h-80 min-w-[14rem] min-h-[14rem] max-w-xs max-h-xs flex flex-col justify-between items-center shadow-lg bg-white/90 ">

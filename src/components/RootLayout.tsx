@@ -1,5 +1,10 @@
 import { ThemeProvider } from "@/components/theme-provider"
- 
+import { ReactNode } from "react";
+
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>

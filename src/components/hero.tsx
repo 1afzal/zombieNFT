@@ -6,7 +6,6 @@ import deadZombie from './deadZombie.jpg';
 import grandpaZombie from './GrandpaZombie.jpg';
 import MummyZombie from './mummyZombie.jpg'
 import Intro from "./intro";
-import { RetroModeSwitcher } from "@/components/ui/retro-mode-switcher"
 
 function Hero() {
   return (

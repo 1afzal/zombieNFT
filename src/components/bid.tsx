@@ -11,7 +11,12 @@ import {
 } from "@/components/ui/8bit/drawer";
 import { Button } from "@/components/ui/8bit/button"
 
-function Bid(props) {
+interface BidProps {
+  method: string;
+  variant?: "default" | "secondary" | "destructive" | "outline" | "link" | "ghost";
+}
+
+function Bid(props: BidProps) {
   return (
     <div>
       <Drawer>

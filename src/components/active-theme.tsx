@@ -8,7 +8,7 @@ import {
   useState,
 } from "react";
 
-import { usePathname } from "next/navigation";
+import { useLocation } from "react-router-dom";
 
 import { Theme } from "@/lib/themes";
 
@@ -37,7 +37,7 @@ export function ActiveThemeProvider({
   children: ReactNode;
   initialTheme?: Theme;
 }) {
-  const pathname = usePathname();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     setActiveTheme(DEFAULT_THEME);

@@ -14,7 +14,7 @@ function App() {
     >
       <Navigation />
       <Hero />
-      <Bid />
+      <Bid method="test" />
     </div>
   );
 }
